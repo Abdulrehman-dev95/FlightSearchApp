@@ -24,4 +24,12 @@ class OfflineSearchRepository(
     override fun getFlightsFromAirport(airportCode: String): Flow<List<Airports>> {
         return dataDao.listOfFlightsFromAirport(airportCode)
     }
+
+    override suspend fun deleteFavourite(departureCode: String, destinationCode: String) {
+        dataDao.deleteFavourite(departureCode, destinationCode)
+    }
+    override suspend fun getMaxFavouriteId(): Int {
+        return dataDao.getMaxId() ?: 0
+    }
+
 }

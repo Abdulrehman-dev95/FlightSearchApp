@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">FlightSearchApp</string>
+    <string name="mic">Mic</string>
+    <string name="miccoloranimation">MicColorAnimation</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="no_speech_input">No speech input</string>
+    <string name="server_error">Server error</string>
+    <string name="recognizer_busy">Recognizer busy</string>
+    <string name="no_match_found">No match found</string>
+    <string name="network_timeout">Network timeout</string>
+    <string name="network_error">Network error</string>
+    <string name="insufficient_permissions">Insufficient permissions</string>
+    <string name="client_side_error">Client side error</string>
+    <string name="audio_recording_error">Audio recording error</string>
+    <string name="recognition_failed">Recognition failed: %1$s</string>
+    <string name="microphone_permission_denied">Microphone permission denied.</string>
+    <string name="speech_recognition_not_available_on_this_device">Speech recognition not available on this device.</string>
+    <string name="favourite_flights">Favourite Flights</string>
+    <string name="flight_search_app">Flight Search App</string>
+    <string name="favourite">Favourite</string>
+    <string name="arrive">ARRIVE</string>
+    <string name="depart">DEPART</string>
+    <string name="no_favourite_flights">No Favourite Flights</string>
+    <string name="flights_from">Flights from %1$s</string>
+    <string name="search_departure_airport">Search Departure Airport</string>
+    <string name="search">Search</string>
 </resources>

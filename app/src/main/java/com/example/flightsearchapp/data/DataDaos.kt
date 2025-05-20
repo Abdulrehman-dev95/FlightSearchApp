@@ -22,6 +22,10 @@ interface DataDao {
     @Query("SELECT * FROM favorite")
     suspend fun listOfFavourites(): List<Favourite>
 
+    @Query("DELETE FROM favorite WHERE departure_code = :departureCode AND destination_code = :destinationCode")
+    suspend fun deleteFavourite(departureCode: String, destinationCode: String)
+    @Query("SELECT MAX(id) FROM favorite")
+    suspend fun getMaxId(): Int?
 
 }
 

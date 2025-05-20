@@ -8,4 +8,6 @@ interface FlightSearchRepository {
     suspend fun getAirport(airportCode: String): String
     suspend fun insertFavourite(favourite: Favourite)
     fun getAllFlightsExceptThis(airportCode: String): Flow<List<Airports>>
+    suspend fun deleteFavourite(departureCode: String, destinationCode: String)
+    suspend fun getMaxFavouriteId(): Int
 }
